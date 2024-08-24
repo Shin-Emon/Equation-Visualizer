@@ -16,6 +16,11 @@ const calc = (left, right) => {
         allSteps.push(step);
     }
 
+    allSteps.push({
+        "equation": algebra.parse(`x = ${simplified.solveFor('x')}`),
+        "transposing": false
+    })
+
     return allSteps;
 };
 

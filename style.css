@@ -9,6 +9,7 @@
 /* 左辺の式 */
 #visualize-equations #left-eq {
     position: absolute;
+    font-size: 15pt;
     z-index: 10;
     left: 15%;
 }
@@ -16,12 +17,14 @@
 /* 右辺の式 */
 #visualize-equations #right-eq {
     position: absolute;
+    font-size: 15pt;
     z-index: 10;
     left: 50%;
 }
 
 .normal {
-    top: 24em;
+    top: 1em;
+    margin-top: 18em;
 }
 
 .big {

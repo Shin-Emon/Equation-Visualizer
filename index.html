@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Visualizer</title>
+
+    <!-- jQuery -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+
+    <!-- Algebra.js -->
+    <script src="lib/algebra-0.2.6.min.js"></script>
+
+    <!-- html2canvas -->
+    <script src="lib/html2canvas.min.js"></script>
+
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.css" integrity="sha384-NFTC4wvyQKLwuJ8Ez9AvPNBv8zcC2XaQzXSMvtORKw28BdJbB2QE8Ka+OyrIHcQJ" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.js" integrity="sha384-z9arB7KJHppq8kK9AESncXcQd/KXIMMPiCrAdxfFpp+5QU438lgBE7UFGbk+gljP" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Equation Visualizer</h1>
+
+    <p>方程式を入力</p>
+    <input type="text" name="left-side-input" id="left-side-input">
+    =
+    <input type="text" name="right-side-input" id="right-side-input">
+    <button type="submit" id="calc-btn">計算</button>
+
+    <div class="equation-view">
+        <span id="simplified"></span>
+        <ul id="steps">
+            <!-- Transposition Steps -->
+        </ul>
+    </div>
+
+    <button id="next-btn">次へ</button>
+
+    <div class="visualize">
+        <img src="assets/scales-left.png" alt="" class="image invisible" id="scale-left">
+        <img src="assets/scales-mid.png" alt="" class="image invisible" id="scale-mid">
+        <img src="assets/scales-right.png" alt="" class="image invisible" id="scale-right">
+    
+        <div id="visualize-equations">
+
+        </div>
+    </div>
+
+    <script src="js/const.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+</html>

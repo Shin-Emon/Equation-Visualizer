@@ -1,0 +1,29 @@
+.image {
+    width: 75%;
+}
+
+.invisible {
+    display: none;
+}
+
+/* 左辺の式 */
+#visualize-equations #left-eq {
+    position: absolute;
+    z-index: 10;
+    left: 15%;
+}
+
+/* 右辺の式 */
+#visualize-equations #right-eq {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+}
+
+.normal {
+    top: 24em;
+}
+
+.big {
+    top: 27em;
+}

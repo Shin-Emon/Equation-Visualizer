@@ -1,0 +1,11 @@
+[参考文献]
+
+(Stack Overflow) https://stackoverflow.com/questions/43496871/equation-evaluation-in-math-js
+(Algebra.js) http://algebra.js.org/
+(KaTeX) https://katex.org/docs/browser
+(HTML canvas) https://developer.mozilla.org/ja/docs/Web/API/Canvas_API/Tutorial
+
+[ChatGPT 使用部分プロンプト]
+
+1. Algebra.jsで項から係数や符号を取得する関数を調べた。
+https://chatgpt.com/share/3f1e4f0b-0c27-4f6c-843b-1581b6581c2e
